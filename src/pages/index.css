@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Gaegu:400,700');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,400i,700,700i');
+
+html,body {
+margin:0;
+overflow-x: hidden;
+font-family: 'IBM Plex Mono', monospace;
+}
+
+::-moz-selection { background: black; color: white;}
+::selection { background: black; color: white;}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 700;
+  font-style: italic;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.row {
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  margin: 0px;
+}
+
+.block {
+  width: 50vw;
+  height: 50vw;
+  /* background-color: blue; */
+  border: 1px solid black;
+  text-align: center;
+  border-left: 0px;
+}
+
+.newRow > div {
+  border-top: 0px;
+}
+
+.r {
+  border-left: 0px.
+}
+
+.line {
+  margin-top: 2%;
+  width: 100%;
+  height: 1px;
+  background-color: black
+}
+
+.header {
+  margin-top: 12%;
+  margin-left: 0;
+  /* background-color: red; */
+  position: relative;
+}
+
+.header > h1 {
+  text-align: left;
+  margin-left: 8%;
+  font-size: 2.2em;
+
+}
+
+.header > h1 > span {
+  font-weight: normal;
+}
+
+.list {
+  /* background-color: red; */
+  text-align: left;
+  margin-left: 9%;
+  margin-top: 6%;
+  list-style-type: square;
+  max-width: 80%;
+}
+
+.list > li {
+  padding-bottom: 6%;
+  font-size: 1.4em;
+  padding-left: 3%;
+}
+
+.list > li > li {
+  margin-top: 3%;
+  padding-bottom: 1%;
+  font-size: .8em;
+  padding-left: 3%;
+  font-weight: 300;
+}
+
+.footer {
+  height: 200px;
+  background-color: white;
+  text-align: center;
+}
+
+.footer > p {
+  /* display: inline-block; */
+  margin: auto;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .header {
+    margin-top: 8%;
+}
+  .header > h1 {
+    font-size: 1.8em;
+  }
+  .list > li {
+    font-size: 1.2em;
+  }
+
+  .footer {
+    height: 140px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .block {
+        /* background-color: green; */
+        width: 100vw;
+        height: 100vw;
+        border-top: 0px;
+    }
+
+    .row {
+      display: block;
+    }
+
+    .first {
+      border-top: 1px solid black;
+    }
+
+    .l {
+      border-bottom-style: dotted;
+      border-bottom-width: 2px;
+    }
+
+    .line {
+      background-color: white;
+    }
+
+    .header {
+      margin-top: 10%;
+    }
+
+    .header > h1 {
+      font-size: 2.2em;
+    }
+
+    .list > li {
+      font-size: 1.5em;
+    }
+
+    .footer {
+      height: 100px;
+    }
+
+    .footer > p {
+      margin-top: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .header {
+    margin-top: 6%;
+  }
+
+  .header > h1 {
+    font-size: 1.9em;
+  }
+
+  .list > li {
+    font-size: 1.1em;
+  }
+
+
+}
+
+@media only screen and (max-width: 425px) {
+
+  .header {
+    margin-top: 4%;
+  }
+
+  .header > h1 {
+    font-size: 1.7em;
+  }
+
+  .list > li {
+    font-size: 1em;
+  }
+
+
+}
+
+@media only screen and (max-width: 325px) {
+
+  .list > li {
+    font-size: 0.8em;
+  }
+
+
+}

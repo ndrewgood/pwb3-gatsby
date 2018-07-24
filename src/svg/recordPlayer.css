@@ -1,0 +1,57 @@
+.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+.st1{fill:none;stroke:#000000;stroke-miterlimit:10;}
+#Layer_2{enable-background: new 0 0 1035 848}
+
+.rpContainer {
+    position: relative;
+    height: 100%;
+}
+
+.rpFront {
+  position: absolute;
+  z-index: 10;
+}
+
+
+.rpCircle {
+  position: absolute;
+  z-index: 30;
+  width: 3%;
+  height: 3%;
+  top: 40.5%;
+  left: 38.5%;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.rpCircle:hover {
+  cursor: pointer;
+}
+
+
+.smallImage {
+  height: 28%;
+  width: 28%;
+  top: 28%;
+  left: 26%;
+  position: absolute;
+  border-Radius:50%;
+  background-Repeat: no-repeat;
+  background-Position: center;
+  background-Size: 102%;
+  z-Index: 20;
+}
+
+.bigImage {
+  height: 74%;
+  width: 74%;
+  top: 5%;
+  left: 3%;
+  position: absolute;
+  border-Radius: 50%;
+  background-Repeat: no-repeat;
+  background-Position: center;
+  background-Size: 100%;
+  opacity: 0.4;
+}

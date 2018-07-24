@@ -1,0 +1,67 @@
+.rpcContainer {
+  height: 95%;
+  width: 95%;
+  margin-left: 2%;
+  margin-top: 10%;
+}
+
+.musicList > li {
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.musicList > li > li{
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.musicList > li > li > a{
+  font-weight: 400;
+}
+
+.musicList > li > li > a:hover{
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1124px) {
+  .musicList > li >{
+    font-size: 0.8em;
+  }
+
+  .musicList > li > li{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .musicList > li > li{
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .musicList > li > li{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  #musicLi{
+    font-size: 0.9em;
+  }
+  .musicList > li > li{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #musicLi{
+    font-size: 0.7em;
+  }
+  .musicList > li > li{
+    font-size: 1.1em;
+  }
+}

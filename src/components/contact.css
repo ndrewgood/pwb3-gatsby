@@ -1,0 +1,14 @@
+.globeDiv {
+  width: 80%;
+  height: 80%;
+  display: inline-block;
+  margin-top: 10%;
+}
+
+.contact > li > a {
+  font-weight: 400;
+}
+
+.contact > li > a:hover {
+  font-weight: 700;
+}

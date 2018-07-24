@@ -1,0 +1,33 @@
+.windowDiv {
+  width: 60%;
+  height: 40%;
+  position: relative;
+  z-index: 2;
+}
+
+.windowDiv > svg {
+  /* width: 60%; */
+}
+
+.wd1 {
+  margin-left: 6%;
+  margin-top: 8%;
+}
+
+.wd2 {
+  margin-left: 30%;
+  margin-top: -23%;
+}
+
+.wd3 {
+  margin-left: 14%;
+  margin-top: -22%;
+}
+
+.windowDiv:hover {
+  z-index: 3;
+}
+
+.pLink {
+  font-weight: 400;
+}
