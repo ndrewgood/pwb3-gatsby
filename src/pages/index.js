@@ -20,7 +20,7 @@ const IndexPage = () => (
 
         <Contact />
       <div className="row footer">
-          <p>c 2018 andrew goodridge <br></br><a href="https://github.com/andrewg8/pwb3">about the site</a></p>
+          <p>c 2018 andrew goodridge <br></br><a href="https://github.com/andrewg8/pwb3-gatsby/blob/master/README.md">about the site</a></p>
 
       </div>
   </div>
