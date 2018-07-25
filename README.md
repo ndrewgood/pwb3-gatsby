@@ -35,3 +35,6 @@
 #### [Andrea Grasso](https://duezero.uno/)
 #### [Matthew Vernon](http://matthewvernon.co/)
 #### [Bobby Giangeruso](http://www.bobby.so/)
+
+
+###### Thank you for reading! if you have any questions or inqueries, shoot me an email at hey@ndrewgood.com
