@@ -26,7 +26,7 @@
 #### Other programs used:
 [Adobe CC(Photoshop, Illustrator, XD)](https://www.adobe.com/creativecloud.html)
 
-[ImgBB](https://imgbb.com/)
+[ImgBB](https://imgbb.com/)/[imgur](https://imgur.com)
 
 
 ## Inspirations for website:
