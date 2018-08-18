@@ -11,6 +11,7 @@
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-next": "^1.0.11",
+    "react-cursor-position": "^2.5.0",
     "react-helmet": "^5.2.0",
     "react-pose": "^2.2.0",
     "react-scroll-to": "^1.2.2"

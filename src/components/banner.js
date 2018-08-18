@@ -1,104 +1,102 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import './banner.css';
-import posed, { PoseGroup } from 'react-pose';
-
-
-
-
-const circleConfig = {
-  circleVisible: { scale: 1, opacity: 1, transition: { duration: 300 }},
-  circleHidden: { scale: 0, opacity: 1, transition: { duration: 300 }},
-}
-
-const textConfig = {
-  open: {y: 20, delayChildren: 100, staggerChildren: 50},
-  closed: {y: 0, delay: 500, staggerChildren: 20}};
-
-const lettersConfig = {
-  open: { opacity: 1, y: -10 },
-  closed: { opacity: 0, y: 50 }
-};
-
-const Circle = posed.circle(circleConfig);
-const Text = posed.h1(textConfig);
-const Letters = posed.div(lettersConfig);
-
-
-
-
+import AndrewWave from "../assets/andrewWave"
+import ReactCursorPosition from 'react-cursor-position';
 
 class Banner extends React.Component {
   constructor(props) {
   super(props);
-  this.state = {
-    circleIsVisible: true,
-    textIsVisible: false,
-    text: ["a", "n", "d", "r", "e", "w", " ", "g", "o", "o", "d", "r", "i", "d", "g", "e"]
-  };
+  this.state = { width: 0, height: 0 };
+  this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
 }
 
-animationHandler = () => {
-  this.setState((prevState, props) => {
-    return {
-      circleIsVisible: !prevState.circleIsVisible
-    };
-  });
+componentDidMount() {
+  this.updateWindowDimensions();
+  window.addEventListener('resize', this.updateWindowDimensions);
+}
 
-  setTimeout(() => {
-    this.setState((prevState, props) => {
-      return {
-        circleIsVisible: !prevState.circleIsVisible
-      };
-    })
-  }, 3000);
+componentWillUnmount() {
+  window.removeEventListener('resize', this.updateWindowDimensions);
+}
 
-  this.setState((prevState, props) => {
-    return {
-      textIsVisible: !prevState.textIsVisible
-    };
-  });
-
-  setTimeout(() => {
-    this.setState((prevState, props) => {
-      return {
-        textIsVisible: !prevState.textIsVisible
-      };
-    })
-  }, 2500);
-  }
-
-
-//click circle, animation state set on, interval for like 3 seconds, circle comes back.
-//also when click circle, another animation waits 1 second to play, name comes up
+updateWindowDimensions() {
+  this.setState({ width: window.innerWidth, height: window.innerHeight });
+}
 
 render() {
-
-
-
   return (
     <div>
       <div className="banner">
         <div className="frame">
-          <ul className="Nav">
-          {/*  <li><a className="navAbout">about</a></li>
-            <li><a href="">projects</a></li>
-            <li><a href="">music</a></li>
-            <li><a className="navContact" href="">contact</a></li> */}
-          </ul>
-          <Text className="bannerName" pose={this.state.textIsVisible ? 'open' : 'closed'}>
-            {this.state.text.map((x,i) => <Letters key={i}>{x}</Letters>)}
-          </Text>
-          <svg className="animeSvg"><Circle className="animeCircle" cx="50" cy="50" r="40" fill="white" pose={this.state.circleIsVisible ? 'circleVisible' : 'circleHidden'} onClick={this.animationHandler}  /></svg>
-            <div className="frameImg">
-                <div className="img"></div>
-            </div>
+        <ReactCursorPosition>
+          <BannerText height={this.state.height} width={this.state.width}/>
+        </ReactCursorPosition>
         </div>
       </div>
 
     </div>
   );
 }
+
+}
+
+const BannerText = (props) => {
+  const {
+    detectedEnvironment: {
+      isMouseDetected = false,
+      isTouchDetected = false
+    } = {},
+    elementDimensions: {
+      width = 0,
+      height = 0
+    } = {},
+    isActive = false,
+    isPositionOutside = false,
+    position: {
+      x = 50,
+      y = 0
+    } = {}
+  } = props;
+
+  var circleXPos;
+  var circleYPos;
+
+  if (width < 800 && width > 501) {
+     circleYPos = 200;
+     circleXPos = -40;
+  } else if(width < 500) {
+    circleYPos = 0;
+    circleXPos = -40;
+  } else {
+     circleYPos = 150;
+     circleXPos = 30;
+  }
+
+  var style={
+    top: y + circleYPos,
+    left: x + circleXPos,
+    cursor: "none"
+  }
+
+
+  
+
+  return (
+    <div className="waveContainer">
+      {props.height > 600 && props.width < 600 ? 
+      [<AndrewWave className="andrewWave" />,
+      <AndrewWave className="andrewWave" />,
+      <AndrewWave className="andrewWave" />,
+      <AndrewWave className="andrewWave" />,
+      <AndrewWave className="andrewWave" />] :
+      <AndrewWave className="andrewWave" />}
+      {isActive || isTouchDetected && isPositionOutside == false && x > 100 ?      
+      <svg className="circle" style={style} height="200" width="200">
+      <circle cx="100" cy="100" r="80" fill="black" />
+      </svg> : null}
+    </div>
+  );
 
 }
 

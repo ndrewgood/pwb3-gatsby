@@ -20,78 +20,25 @@
   justify-content: center;
 }
 
-.animeSvg {
+.waveContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.andrewWave {
+  width: calc(100vw - 250px);
+  margin: auto;
+  z-index: 300;
+}
+
+.andrewWave:hover {
+  cursor: none;
+}
+
+.circle {
   position: absolute;
-  display: block;
-  margin: auto;
-  align-self: center;
-  align-items: center;
-  align-content: center;
-  height: 100px;
-  width: 100px;
-  transition: all .5s ease;
-}
-
-.animeSvg:hover { transform: scale(1.2); }
-
-.animeCircle {
-    cursor: pointer;
-    display: block;
-
-}
-
-.frameImg {
-width: 100%;
-height: 100%;
-display: flex;
-/* clip-path:circle(50px); */
-}
-
-.bannerName {
-  position: absolute;
-  display: block;
-  margin: auto;
-  align-self: center;
-  width: auto;
-  color: white;
-
-}
-
-
-.bannerName div {
-  font-family: 'Gaegu', cursive;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-.Nav {
-  position: absolute;
-  list-style-type: none;
-  /* top: 0;
-  left: 0; */
-  margin: auto;
-  color: white;
-}
-
-.Nav > li {
-  margin-bottom: 20px;
-}
-
-.Nav > li > a {
-  text-decoration: none;
-  color: white;
-}
-
-.img {
-  background-image: url("https://i.imgur.com/ok9OwWS.jpg");
-  /* background-color: red; */
-  background-repeat: no-repeat;
-background-attachment: fixed;
-  background-position:center;
-  display: block;
-  margin: auto;
-  width: calc(100% - 50px);
-  height: calc(100% - 50px);
+  z-index: 50;
 }
 
 @media only screen and (max-width: 800px) {
@@ -100,10 +47,9 @@ background-attachment: fixed;
       height: calc(100vh - 80px);
     }
 
-    .img {
-      background-attachment: scroll;
+    .andrewWave {
+      width: calc(100vw - 150px);
     }
-
 }
 
 @media only screen and (max-width: 425px) {
@@ -112,9 +58,8 @@ background-attachment: fixed;
       height: calc(100vh - 40px);
     }
 
-    .img {
-      width: calc(100% - 30px);
-      height: calc(100% - 30px);
+    .andrewWave {
+      width: calc(100vw - 80px);
     }
 
 }

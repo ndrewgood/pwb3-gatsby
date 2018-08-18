@@ -45,5 +45,5 @@ module.exports = {
     // Avoids sending pageview hits from custom paths
   }
 }
-  ],
+  ]
 }

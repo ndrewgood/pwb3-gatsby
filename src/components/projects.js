@@ -67,7 +67,7 @@ class Projects extends React.Component {
           <div className="line"></div>
 
             <div className="header"><h1><span>——</span> projects</h1></div>
-            <ul class="list">
+            <ul className="list">
                 <li><a onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)} className="pLink" href="https://github.com/andrewg8/pwb2">My old website</a><li onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)}>the first website I made. other projects coming soon...</li></li>
                 {/*<li><a onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)} className="pLink">Example project 2</a><li onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)}>A quick description about this</li></li>
                 <li><a onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)} className="pLink">Example project 3</a><li onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)}>A quick description about this</li></li> */}
