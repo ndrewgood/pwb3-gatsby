@@ -91,7 +91,7 @@ const BannerText = (props) => {
       <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />] :
       <AndrewWave className="andrewWave" />}
-      {isActive || isTouchDetected && x > 100 ?      
+      {isActive || isTouchDetected && x > 100 && !isMobile ?      
       <svg className="circle" style={style} height="200" width="200">
       <circle cx="62.5" cy="62.5" r="50" fill="black" />
       </svg> : null}
