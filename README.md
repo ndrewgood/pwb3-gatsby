@@ -2,6 +2,8 @@
 
 ![:-)](https://i.imgur.com/eDjeT1H.png)
 
+---
+
 ## info
 
 #### JS framework:
@@ -11,12 +13,18 @@
 [Github Pages](https://pages.github.com/)
 
 #### Editor used:
-[Atom](https://atom.io)
+[~~Atom~~](https://atom.io)
+
+[VS Code](https://code.visualstudio.com/)
 
 #### JS libraries:
-[Popmotion Pose](https://popmotion.io/pose/)
+[~~Popmotion Pose~~](https://popmotion.io/pose/)
 
 #### Gatsby plugins:
+[react-cursor-position](https://www.npmjs.com/package/react-cursor-position)
+
+[react-device-detect](https://github.com/duskload/react-device-detect)
+
 [gatsby-plugin-react-helmet](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-react-helmet)
 
 [gatsby-plugin-react-next](https://www.npmjs.com/package/gatsby-plugin-react-next)
@@ -28,6 +36,13 @@
 
 [ImgBB](https://imgbb.com/)/[imgur](https://imgur.com)
 
+---
+
+Started on: 7-7-18
+
+Last Updated: 8-23-18
+
+---
 
 ## Inspirations for website:
 
