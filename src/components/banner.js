@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import './banner.css';
 import AndrewWave from "../assets/andrewWave"
 import ReactCursorPosition from 'react-cursor-position';
+import {isBrowser} from 'react-device-detect';
 import {isMobile} from 'react-device-detect';
 
 class Banner extends React.Component {
@@ -91,7 +92,7 @@ const BannerText = (props) => {
       <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />] :
       <AndrewWave className="andrewWave" />}
-      {isActive || isTouchDetected && x > 100 && !isMobile ?      
+      {isActive || isTouchDetected && x > 100 && isBrowser ?      
       <svg className="circle" style={style} height="200" width="200">
       <circle cx="62.5" cy="62.5" r="50" fill="black" />
       </svg> : null}
