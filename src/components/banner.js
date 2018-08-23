@@ -86,7 +86,7 @@ const BannerText = (props) => {
 
   return (
     <div className="waveContainer">
-      {props.height > 500 && props.width < 600 || isMobile ? 
+      {isMobile || props.height > 500 && props.width < 600 ? 
       [<AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />,
