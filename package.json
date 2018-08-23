@@ -12,6 +12,7 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-react-next": "^1.0.11",
     "react-cursor-position": "^2.5.0",
+    "react-device-detect": "^1.5.9",
     "react-helmet": "^5.2.0",
     "react-pose": "^2.2.0",
     "react-scroll-to": "^1.2.2"

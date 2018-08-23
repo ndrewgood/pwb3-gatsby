@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import './banner.css';
 import AndrewWave from "../assets/andrewWave"
 import ReactCursorPosition from 'react-cursor-position';
+import {isMobile} from 'react-device-detect';
 
 class Banner extends React.Component {
   constructor(props) {
@@ -84,7 +85,7 @@ const BannerText = (props) => {
 
   return (
     <div className="waveContainer">
-      {props.height > 500 && props.width < 600 ? 
+      {props.height > 500 && props.width < 600 || isMobile ? 
       [<AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />,
