@@ -91,9 +91,9 @@ const BannerText = (props) => {
       <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />] :
       <AndrewWave className="andrewWave" />}
-      {isActive || isTouchDetected && isPositionOutside == false && x > 100 ?      
+      {isActive || isTouchDetected && x > 100 ?      
       <svg className="circle" style={style} height="200" width="200">
-      <circle cx="100" cy="100" r="80" fill="black" />
+      <circle cx="62.5" cy="62.5" r="50" fill="black" />
       </svg> : null}
     </div>
   );
