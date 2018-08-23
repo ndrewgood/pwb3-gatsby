@@ -90,6 +90,7 @@ const BannerText = (props) => {
       [<AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />,
+      <AndrewWave className="andrewWave" />,
       <AndrewWave className="andrewWave" />] :
       <AndrewWave className="andrewWave" />}
       {isActive || isTouchDetected && x > 100 && isBrowser ?      
