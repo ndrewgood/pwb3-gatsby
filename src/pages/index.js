@@ -12,13 +12,14 @@ const IndexPage = () => (
   <div className="container">
       <Banner />
 
-        <About />
+      <About />
 
-        <Projects />
+      <Projects />
 
-        <Music />
+      <Music />
 
-        <Contact />
+      <Contact />
+  
       <div className="row footer">
           <p>c 2018 andrew goodridge <br></br><a href="https://github.com/andrewg8/pwb3-gatsby/blob/master/README.md">about the site</a></p>
 
