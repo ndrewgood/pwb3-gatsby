@@ -9,38 +9,38 @@ const musicData = {
   artCovers: [
       {
         id: 0,
-        artReg: "https://image.ibb.co/jMtkpJ/History_Reg.jpg",
-        artBlur: "https://image.ibb.co/h9w5pJ/History_Blur.jpg",
+        artReg: "https://image.ibb.co/k85PKe/BasReg.png",
+        artBlur: "https://image.ibb.co/dvDBze/BasBlur.png",
       },
       {
         id: 1,
-        artReg: "https://image.ibb.co/nPWGwy/Ghost_Town_Reg.jpg",
-        artBlur: "https://image.ibb.co/cNurUJ/Ghost_Town_Blur.jpg",
+        artReg: "https://image.ibb.co/bGXtCz/AmineReg.png",
+        artBlur: "https://image.ibb.co/bGmaQK/Amine_Blur.png",
       },
       {
         id: 2,
-        artReg: "https://image.ibb.co/nnnOby/Travels_Reg.jpg",
-        artBlur: "https://image.ibb.co/hPfLOd/Travels_Blur.jpg",
+        artReg: "https://image.ibb.co/mdGaQK/MacReg.png",
+        artBlur: "https://image.ibb.co/b6QPKe/MacBlur.png",
       },
       {
         id: 3,
-        artReg: "https://image.ibb.co/hgK89J/Forever_Always_Reg.jpg",
-        artBlur: "https://image.ibb.co/kd1zGy/Forever_Always_Blur.jpg",
+        artReg: "https://image.ibb.co/cBEJee/Choker_Reg.png",
+        artBlur: "https://image.ibb.co/ermWze/Choker_Blur.png",
       },
       {
         id: 4,
-        artReg: "https://image.ibb.co/bvYJ9J/Soiree_Reg.jpg",
-        artBlur: "https://image.ibb.co/dBMS3d/Soiree_Blur.jpg",
+        artReg: "https://image.ibb.co/fAF25K/Goldlink_Reg.png",
+        artBlur: "https://image.ibb.co/cpsh5K/Goldlink_Blur.png",
       },
       {
         id: 5,
-        artReg: "https://image.ibb.co/dSsT9J/Fallingwater_Reg.jpg",
-        artBlur: "https://image.ibb.co/bzQn3d/Fallingwater_Blur.jpg",
+        artReg: "https://image.ibb.co/g55MXz/Ariana_Reg.png",
+        artBlur: "https://image.ibb.co/mTcDee/Ariana_Blur.png",
       },
       {
         id: 6,
-        artReg: "https://image.ibb.co/bKTUGy/Total_Entertainment_Forever_Reg.jpg",
-        artBlur: "https://image.ibb.co/hqiJ9J/Total_Entertainment_Forever_Blur.jpg",
+        artReg: "https://image.ibb.co/fpQ25K/KeysReg.png",
+        artBlur: "https://image.ibb.co/i9GmXz/KeysBlur.png",
       },
     ],
 };
@@ -53,8 +53,8 @@ class Music extends React.Component{
   this.state = {
     currentArt:  {
           id: 0,
-          artReg: "https://lh4.googleusercontent.com/dbxGXGs_FOtC9Sm4EB8k1QAhru0a0J9sAAiT161xsQO9H7oQMhq0Hksb5SqdlZkVERN_dYp5VaTA8_Bh2xx8=w1922-h950",
-          artBlur: "https://lh5.googleusercontent.com/eG3XHfQ4AjiKKiPwXH3pJpehJ1gUjsQOPEjBF9LxxnPPZQYzeHTmQaxE4BnQgbhv_wGhtWO3UggDJxkwEvct=w1922-h950",
+          artReg: "https://image.ibb.co/k85PKe/BasReg.png",
+          artBlur: "https://image.ibb.co/dvDBze/BasBlur.png",
         }
     }
   };
@@ -91,13 +91,13 @@ class Music extends React.Component{
                 <div className="header"><h1 onClick={this.clickedHandler}><span>——</span> music</h1></div>
                 <ul className="list musicList">
                     <li id="musicLi">Heres a short list of some of my favorite songs recently:
-                      <li><a onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)} href="https://open.spotify.com/track/4TwVtW8hS5LyLoDtJGpUOg?si=jdNztOIVTqWMGKVUn-ZqqQ">History - 88rising</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)} href="https://open.spotify.com/track/6Bg7MznA9X0dIhlAsLyBYj?si=Gv2eEDpqT9i6HBI9Be_3bw">Ghost Town - Kanye West</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)} href="https://open.spotify.com/track/1WPevIqr6oWsA4BWwMhkW5?si=V5f2cmkFTRiDOO0atwJZZg">Travels - khai dreams</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(3)} onTouchStart={() => this.mouseOverHandler(3)} href="https://open.spotify.com/track/4B2kIC5F0kSVfTD5crzgm9?si=ku_jmFVRS9CpIjnDxYNm0Q">Forever Always - Peter CottonTale</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(4)} onTouchStart={() => this.mouseOverHandler(4)} href="https://open.spotify.com/track/0IqnMcKFgtMaxdsSZaQDAo?si=1Q2pS78-RA67xBDCPFGlqw">Soirée - Last Night In Paris</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(5)} onTouchStart={() => this.mouseOverHandler(5)} href="https://open.spotify.com/track/11r8xMuVTS66RjtYgLneRw?si=Kd4eTSwdQYKsC0AozmXAjw">Fallingwater - Maggie Rogers</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(6)} onTouchStart={() => this.mouseOverHandler(6)} href="https://open.spotify.com/track/10tS3AWz8aUWArbnxIrUL6?si=BAOwojXJTliJQB55tYeHYQ">Total Entertainment Forever - Father John Misty</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)} href="">Tribe - Bas</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)} href="">REEL IT IN - Amine </a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)} href="">Still Beating - Mac Demarco</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(3)} onTouchStart={() => this.mouseOverHandler(3)} href="">Drift - Choker</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(4)} onTouchStart={() => this.mouseOverHandler(4)} href="">Herside Story - GoldLink</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(5)} onTouchStart={() => this.mouseOverHandler(5)} href="">everytime - Ariana Grande</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(6)} onTouchStart={() => this.mouseOverHandler(6)} href="">Blended Family - Alicia Keys</a></li>
                   </li>
                 </ul>
           </div>
