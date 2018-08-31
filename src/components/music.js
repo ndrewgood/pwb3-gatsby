@@ -29,13 +29,13 @@ const musicData = {
       },
       {
         id: 4,
-        artReg: "https://image.ibb.co/fAF25K/Goldlink_Reg.png",
-        artBlur: "https://image.ibb.co/cpsh5K/Goldlink_Blur.png",
+        artReg: "https://image.ibb.co/g55MXz/Ariana_Reg.png",
+        artBlur: "https://image.ibb.co/mTcDee/Ariana_Blur.png",
       },
       {
         id: 5,
-        artReg: "https://image.ibb.co/g55MXz/Ariana_Reg.png",
-        artBlur: "https://image.ibb.co/mTcDee/Ariana_Blur.png",
+        artReg: "https://image.ibb.co/fAF25K/Goldlink_Reg.png",
+        artBlur: "https://image.ibb.co/cpsh5K/Goldlink_Blur.png",
       },
       {
         id: 6,
@@ -91,13 +91,13 @@ class Music extends React.Component{
                 <div className="header"><h1 onClick={this.clickedHandler}><span>——</span> music</h1></div>
                 <ul className="list musicList">
                     <li id="musicLi">Heres a short list of some of my favorite songs recently:
-                      <li><a onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)} href="">Tribe - Bas</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)} href="">REEL IT IN - Amine </a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)} href="">Still Beating - Mac Demarco</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(3)} onTouchStart={() => this.mouseOverHandler(3)} href="">Drift - Choker</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(4)} onTouchStart={() => this.mouseOverHandler(4)} href="">Herside Story - GoldLink</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(5)} onTouchStart={() => this.mouseOverHandler(5)} href="">everytime - Ariana Grande</a></li>
-                      <li><a onMouseOver={() => this.mouseOverHandler(6)} onTouchStart={() => this.mouseOverHandler(6)} href="">Blended Family - Alicia Keys</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)} href="https://open.spotify.com/track/0YAQnYt2oB8OdoaeqnHyTI?si=5G-GomybSFO7DpU18xK-uw">Tribe - Bas</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)} href="https://open.spotify.com/track/5qHirGR7M9tdm6C17DlzSY?si=XW0i3hcoTEyA3zi_IHdUzQ">REEL IT IN - Amine </a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)} href="https://open.spotify.com/track/2N4idqj9TT3HnH2OFT9j0v?si=Ch7GR2qcSfCNOAr5eUcEUw">Still Beating - Mac Demarco</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(3)} onTouchStart={() => this.mouseOverHandler(3)} href="https://open.spotify.com/track/4BNqWebyipWrMsupuTmKO9?si=tu6Vx8tWTG2B9YqpgfWU7A">Drift - Choker</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(4)} onTouchStart={() => this.mouseOverHandler(4)} href="https://open.spotify.com/track/7sPbp28sThpD4opAhQsMTx?si=wEmFPpaITtCKJCtXQ9mXlg">everytime - Ariana Grande</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(5)} onTouchStart={() => this.mouseOverHandler(5)} href="https://open.spotify.com/track/564oa00vY05d1uYnTEAAmE?si=u66_saBOROuAGDy9viSl8w">Herside Story - Goldlink</a></li>
+                      <li><a onMouseOver={() => this.mouseOverHandler(6)} onTouchStart={() => this.mouseOverHandler(6)} href="https://open.spotify.com/track/39AS0BbUEoAwrBUo6vGUBD?si=FXFeTBQHSDq08GkwidjB7g">Blended Family - Alicia Keys</a></li>
                   </li>
                 </ul>
           </div>
