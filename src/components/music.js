@@ -68,7 +68,7 @@ class Music extends React.Component{
 
   clickedHandler = () => {
     const num = this.state.currentArt.id + 1;
-    if (num == 6) {
+    if (num == 7) {
       this.setState({ currentArt: musicData.artCovers[0]});
     } else {
     const clickArt = musicData.artCovers[num];
@@ -79,7 +79,7 @@ class Music extends React.Component{
 
 
     render() {
-      return (
+      return (``
         <div className="row newRow">
           <div className="block l">
             <div className="rpcContainer">
