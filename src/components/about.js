@@ -22,9 +22,9 @@ const About = () => (
     <div className="header"><h1><span>——</span> about</h1></div>
     <ul className="list">
       <li>18 years old</li>
-      <li>passionate about art and technology, specifically stuff which deals with both</li>
-      <li>currently interested in learning web development</li>
-      <li>preparing to start as a freshman at <a href="https://www.scad.edu/">scad</a> in the fall</li>
+      <li>from West Chester, PA</li>
+      <li>currently interested in learning web development/UX Design</li>
+      <li>Enrolled at <a href="https://www.scad.edu/">scad</a></li>
     </ul>
 
   </div>
