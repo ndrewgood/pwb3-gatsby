@@ -79,7 +79,7 @@ class Music extends React.Component{
 
 
     render() {
-      return (``
+      return (
         <div className="row newRow">
           <div className="block l">
             <div className="rpcContainer">
