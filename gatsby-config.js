@@ -5,16 +5,6 @@ module.exports = {
   plugins: ['gatsby-plugin-react-helmet',
             'gatsby-plugin-react-next',
             {
-              resolve: 'gatsby-plugin-github-pages',
-              options: {
-                customDomain: 'http://ndrewgood.com',
-                publishOptions: {
-                  repo: 'https://github.com/andrewg8/pwb3.git',
-                  message: 'Auto-generated commit!'
-                }
-              }
-            },
-            {
               resolve: `gatsby-plugin-favicon`,
               options: {
                 logo: "./src/favicon.png",
