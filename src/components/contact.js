@@ -77,7 +77,7 @@ class Contact extends React.Component{
                 <li><a onMouseOver={() => this.mouseOverHandler(0)} onTouchStart={() => this.mouseOverHandler(0)} href="https://www.instagram.com/ndrewgood/">Instagram</a></li>
                 <li><a onMouseOver={() => this.mouseOverHandler(1)} onTouchStart={() => this.mouseOverHandler(1)} href="https://github.com/andrewg8">Github</a></li>
                 <li><a onMouseOver={() => this.mouseOverHandler(2)} onTouchStart={() => this.mouseOverHandler(2)} href="https://open.spotify.com/user/22zbmyiz6chqqhzc6enozraoq?si=6v4EpqxYS-euz_-s5dFevA">Spotify</a></li>
-                <li><a onMouseOver={() => this.mouseOverHandler(3)} onTouchStart={() => this.mouseOverHandler(3)} href="https://image.ibb.co/i8u9zJ/snapchatcode.png">Snapchat</a></li>
+                <li><a onMouseOver={() => this.mouseOverHandler(3)} onTouchStart={() => this.mouseOverHandler(3)} href="/">Snapchat</a></li>
                 <li><a onMouseOver={() => this.mouseOverHandler(4)} onTouchStart={() => this.mouseOverHandler(4)} href="mailto:hey@ndrewgood.com">Email</a></li>
               </ul>
 
